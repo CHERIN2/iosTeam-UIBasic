@@ -56,15 +56,39 @@
 		1B238E1E2A8C630100872A1B /* ThekusDayDiary */ = {
 			isa = PBXGroup;
 			children = (
-				1B238E1F2A8C630100872A1B /* AppDelegate.swift */,
-				1B238E212A8C630100872A1B /* SceneDelegate.swift */,
-				1B238E232A8C630100872A1B /* ViewController.swift */,
-				1B238E252A8C630100872A1B /* Main.storyboard */,
+				1B238E332A8C997200872A1B /* Delegate */,
+				1B238E342A8C9A8B00872A1B /* View */,
+				1B238E352A8C9AA800872A1B /* StoryBoard */,
 				1B238E282A8C630300872A1B /* Assets.xcassets */,
-				1B238E2A2A8C630300872A1B /* LaunchScreen.storyboard */,
 				1B238E2D2A8C630300872A1B /* Info.plist */,
 			);
 			path = ThekusDayDiary;
+			sourceTree = "<group>";
+		};
+		1B238E332A8C997200872A1B /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1B238E212A8C630100872A1B /* SceneDelegate.swift */,
+				1B238E1F2A8C630100872A1B /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		1B238E342A8C9A8B00872A1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B238E232A8C630100872A1B /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B238E352A8C9AA800872A1B /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				1B238E252A8C630100872A1B /* Main.storyboard */,
+				1B238E2A2A8C630300872A1B /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
