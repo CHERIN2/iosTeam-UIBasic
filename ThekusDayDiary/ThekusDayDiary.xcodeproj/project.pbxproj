@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		1B238E202A8C630100872A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B238E1F2A8C630100872A1B /* AppDelegate.swift */; };
 		1B238E222A8C630100872A1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B238E212A8C630100872A1B /* SceneDelegate.swift */; };
-		1B238E242A8C630100872A1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B238E232A8C630100872A1B /* ViewController.swift */; };
 		1B238E272A8C630100872A1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B238E252A8C630100872A1B /* Main.storyboard */; };
 		1B238E292A8C630300872A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B238E282A8C630300872A1B /* Assets.xcassets */; };
 		1B238E2C2A8C630300872A1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B238E2A2A8C630300872A1B /* LaunchScreen.storyboard */; };
+		7B6B494C2A8D29640098B8DE /* Font in Resources */ = {isa = PBXBuildFile; fileRef = 7B6B494B2A8D29640098B8DE /* Font */; };
+		7B6B494F2A8D2A640098B8DE /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B494E2A8D2A640098B8DE /* MainCell.swift */; };
+		7B6B49512A8D2C6F0098B8DE /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B49502A8D2C6F0098B8DE /* UserList.swift */; };
+		7BF6E3D62A8D3152001D30B1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF6E3D52A8D3152001D30B1 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B238E1C2A8C630100872A1B /* ThekusDayDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThekusDayDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B238E1F2A8C630100872A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B238E212A8C630100872A1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1B238E232A8C630100872A1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1B238E262A8C630100872A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B238E282A8C630300872A1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B238E2B2A8C630300872A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B238E2D2A8C630300872A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B6B494B2A8D29640098B8DE /* Font */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Font; path = "../../../app project/Font"; sourceTree = "<group>"; };
+		7B6B494E2A8D2A640098B8DE /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		7B6B49502A8D2C6F0098B8DE /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
+		7BF6E3D52A8D3152001D30B1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,7 @@
 		1B238E132A8C630000872A1B = {
 			isa = PBXGroup;
 			children = (
+				7B6B494D2A8D296D0098B8DE /* Font */,
 				1B238E1E2A8C630100872A1B /* ThekusDayDiary */,
 				1B238E1D2A8C630100872A1B /* Products */,
 			);
@@ -56,8 +63,9 @@
 		1B238E1E2A8C630100872A1B /* ThekusDayDiary */ = {
 			isa = PBXGroup;
 			children = (
+				7B6B494B2A8D29640098B8DE /* Font */,
 				1B238E332A8C997200872A1B /* Delegate */,
-				1B238E342A8C9A8B00872A1B /* View */,
+				1B238E342A8C9A8B00872A1B /* MainView */,
 				1B238E352A8C9AA800872A1B /* StoryBoard */,
 				1B238E282A8C630300872A1B /* Assets.xcassets */,
 				1B238E2D2A8C630300872A1B /* Info.plist */,
@@ -74,12 +82,14 @@
 			path = Delegate;
 			sourceTree = "<group>";
 		};
-		1B238E342A8C9A8B00872A1B /* View */ = {
+		1B238E342A8C9A8B00872A1B /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				1B238E232A8C630100872A1B /* ViewController.swift */,
+				7B6B49502A8D2C6F0098B8DE /* UserList.swift */,
+				7BF6E3D52A8D3152001D30B1 /* MainView.swift */,
+				7B6B494E2A8D2A640098B8DE /* MainCell.swift */,
 			);
-			path = View;
+			path = MainView;
 			sourceTree = "<group>";
 		};
 		1B238E352A8C9AA800872A1B /* StoryBoard */ = {
@@ -89,6 +99,13 @@
 				1B238E2A2A8C630300872A1B /* LaunchScreen.storyboard */,
 			);
 			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		7B6B494D2A8D296D0098B8DE /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +169,7 @@
 				1B238E2C2A8C630300872A1B /* LaunchScreen.storyboard in Resources */,
 				1B238E292A8C630300872A1B /* Assets.xcassets in Resources */,
 				1B238E272A8C630100872A1B /* Main.storyboard in Resources */,
+				7B6B494C2A8D29640098B8DE /* Font in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,8 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B238E242A8C630100872A1B /* ViewController.swift in Sources */,
+				7B6B49512A8D2C6F0098B8DE /* UserList.swift in Sources */,
+				7BF6E3D62A8D3152001D30B1 /* MainView.swift in Sources */,
 				1B238E202A8C630100872A1B /* AppDelegate.swift in Sources */,
+				7B6B494F2A8D2A640098B8DE /* MainCell.swift in Sources */,
 				1B238E222A8C630100872A1B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +343,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,6 +371,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
