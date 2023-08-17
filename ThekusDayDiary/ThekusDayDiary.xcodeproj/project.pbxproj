@@ -12,7 +12,7 @@
 		1B238E272A8C630100872A1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B238E252A8C630100872A1B /* Main.storyboard */; };
 		1B238E292A8C630300872A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B238E282A8C630300872A1B /* Assets.xcassets */; };
 		1B238E2C2A8C630300872A1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B238E2A2A8C630300872A1B /* LaunchScreen.storyboard */; };
-		7B6B494C2A8D29640098B8DE /* Font in Resources */ = {isa = PBXBuildFile; fileRef = 7B6B494B2A8D29640098B8DE /* Font */; };
+		1B238E3A2A8DA50800872A1B /* ProFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B238E392A8DA50800872A1B /* ProFileView.swift */; };
 		7B6B494F2A8D2A640098B8DE /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B494E2A8D2A640098B8DE /* MainCell.swift */; };
 		7B6B49512A8D2C6F0098B8DE /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B49502A8D2C6F0098B8DE /* UserList.swift */; };
 		7BF6E3D62A8D3152001D30B1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF6E3D52A8D3152001D30B1 /* MainView.swift */; };
@@ -26,7 +26,7 @@
 		1B238E282A8C630300872A1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B238E2B2A8C630300872A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B238E2D2A8C630300872A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B6B494B2A8D29640098B8DE /* Font */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Font; path = "../../../app project/Font"; sourceTree = "<group>"; };
+		1B238E392A8DA50800872A1B /* ProFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProFileView.swift; sourceTree = "<group>"; };
 		7B6B494E2A8D2A640098B8DE /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		7B6B49502A8D2C6F0098B8DE /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
 		7BF6E3D52A8D3152001D30B1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -46,7 +46,6 @@
 		1B238E132A8C630000872A1B = {
 			isa = PBXGroup;
 			children = (
-				7B6B494D2A8D296D0098B8DE /* Font */,
 				1B238E1E2A8C630100872A1B /* ThekusDayDiary */,
 				1B238E1D2A8C630100872A1B /* Products */,
 			);
@@ -63,9 +62,10 @@
 		1B238E1E2A8C630100872A1B /* ThekusDayDiary */ = {
 			isa = PBXGroup;
 			children = (
-				7B6B494B2A8D29640098B8DE /* Font */,
 				1B238E332A8C997200872A1B /* Delegate */,
+				1B238E372A8DA44100872A1B /* Models */,
 				1B238E342A8C9A8B00872A1B /* MainView */,
+				1B238E382A8DA48900872A1B /* ProfileView */,
 				1B238E352A8C9AA800872A1B /* StoryBoard */,
 				1B238E282A8C630300872A1B /* Assets.xcassets */,
 				1B238E2D2A8C630300872A1B /* Info.plist */,
@@ -85,7 +85,6 @@
 		1B238E342A8C9A8B00872A1B /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				7B6B49502A8D2C6F0098B8DE /* UserList.swift */,
 				7BF6E3D52A8D3152001D30B1 /* MainView.swift */,
 				7B6B494E2A8D2A640098B8DE /* MainCell.swift */,
 			);
@@ -101,11 +100,20 @@
 			path = StoryBoard;
 			sourceTree = "<group>";
 		};
-		7B6B494D2A8D296D0098B8DE /* Font */ = {
+		1B238E372A8DA44100872A1B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7B6B49502A8D2C6F0098B8DE /* UserList.swift */,
 			);
-			path = Font;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B238E382A8DA48900872A1B /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				1B238E392A8DA50800872A1B /* ProFileView.swift */,
+			);
+			path = ProfileView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,7 +177,6 @@
 				1B238E2C2A8C630300872A1B /* LaunchScreen.storyboard in Resources */,
 				1B238E292A8C630300872A1B /* Assets.xcassets in Resources */,
 				1B238E272A8C630100872A1B /* Main.storyboard in Resources */,
-				7B6B494C2A8D29640098B8DE /* Font in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B238E3A2A8DA50800872A1B /* ProFileView.swift in Sources */,
 				7B6B49512A8D2C6F0098B8DE /* UserList.swift in Sources */,
 				7BF6E3D62A8D3152001D30B1 /* MainView.swift in Sources */,
 				1B238E202A8C630100872A1B /* AppDelegate.swift in Sources */,
@@ -336,6 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48CD968PJK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ThekusDayDiary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -364,6 +373,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48CD968PJK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ThekusDayDiary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
