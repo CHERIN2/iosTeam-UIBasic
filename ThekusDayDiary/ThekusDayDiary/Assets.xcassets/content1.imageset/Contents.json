@@ -1,15 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "content2.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "AppLogo.png",
+      "filename" : "content2 1.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "content2 2.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
