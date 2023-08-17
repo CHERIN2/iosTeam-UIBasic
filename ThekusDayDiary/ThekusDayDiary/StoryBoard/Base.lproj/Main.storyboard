@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eYy-8d-Wx7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22138.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eYy-8d-Wx7">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22113"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -112,13 +112,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zle-mg-PYO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1734" y="4"/>
+            <point key="canvasLocation" x="963" y="-737"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ntt-za-YLW">
             <objects>
                 <viewController id="UKh-IM-aQR" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1wX-Rd-Ru5">
+                    <view key="view" contentMode="scaleToFill" id="1wX-Rd-Ru5" customClass="ProfileMainView">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="KGz-R5-VhX"/>
@@ -156,7 +156,7 @@
         <image name="background1" width="564" height="1004"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="person" catalog="system" width="128" height="121"/>
-        <image name="square.and.pencil" catalog="system" width="128" height="113"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

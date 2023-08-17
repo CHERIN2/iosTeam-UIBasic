@@ -1,4 +1,3 @@
-
 import UIKit
 
 class MainCell: UITableViewCell {
@@ -15,8 +14,11 @@ class MainCell: UITableViewCell {
         profile.layer.cornerRadius = 30
         profile.layer.borderColor = UIColor.purple.cgColor
         profile.layer.borderWidth = 3
+        
+        contentImg.layer.cornerRadius = 10
+        contentImg.layer.borderColor = UIColor.gray.cgColor
+        contentImg.layer.borderWidth = 1
     }
-    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
