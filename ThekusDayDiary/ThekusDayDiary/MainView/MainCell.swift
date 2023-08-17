@@ -1,7 +1,6 @@
 import UIKit
 
 class MainCell: UITableViewCell {
-    
     static let identifier = "MainCell"
     
     @IBOutlet weak var profile: UIImageView!
@@ -14,12 +13,14 @@ class MainCell: UITableViewCell {
         profile.layer.cornerRadius = 30
         profile.layer.borderColor = UIColor.purple.cgColor
         profile.layer.borderWidth = 3
-        
         contentImg.layer.cornerRadius = 10
         contentImg.layer.borderColor = UIColor.gray.cgColor
-        contentImg.layer.borderWidth = 1
+        contentImg.layer.borderWidth = 0.5
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+    
+    @IBAction func favBtn(_ sender: UIButton) {
     }
 }
