@@ -17,6 +17,7 @@
 		7B6B49512A8D2C6F0098B8DE /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B49502A8D2C6F0098B8DE /* UserList.swift */; };
 		7BF6E3D62A8D3152001D30B1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF6E3D52A8D3152001D30B1 /* MainView.swift */; };
 		7FF645D32A915480007F608D /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF645D22A915480007F608D /* WriteView.swift */; };
+		CB7DF2622A91D8BF00A4404B /* DitailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7DF2612A91D8BF00A4404B /* DitailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		7B6B49502A8D2C6F0098B8DE /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
 		7BF6E3D52A8D3152001D30B1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7FF645D22A915480007F608D /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
+		CB7DF2612A91D8BF00A4404B /* DitailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DitailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				1B238E352A8C9AA800872A1B /* StoryBoard */,
 				1B238E282A8C630300872A1B /* Assets.xcassets */,
 				1B238E2D2A8C630300872A1B /* Info.plist */,
+				CB7DF2632A91D94300A4404B /* DetialView */,
 			);
 			path = ThekusDayDiary;
 			sourceTree = "<group>";
@@ -125,6 +128,14 @@
 				7FF645D22A915480007F608D /* WriteView.swift */,
 			);
 			path = Write;
+			sourceTree = "<group>";
+		};
+		CB7DF2632A91D94300A4404B /* DetialView */ = {
+			isa = PBXGroup;
+			children = (
+				CB7DF2612A91D8BF00A4404B /* DitailView.swift */,
+			);
+			path = DetialView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +214,7 @@
 				7BF6E3D62A8D3152001D30B1 /* MainView.swift in Sources */,
 				1B238E202A8C630100872A1B /* AppDelegate.swift in Sources */,
 				7B6B494F2A8D2A640098B8DE /* MainCell.swift in Sources */,
+				CB7DF2622A91D8BF00A4404B /* DitailView.swift in Sources */,
 				1B238E222A8C630100872A1B /* SceneDelegate.swift in Sources */,
 				7FF645D32A915480007F608D /* WriteView.swift in Sources */,
 			);
