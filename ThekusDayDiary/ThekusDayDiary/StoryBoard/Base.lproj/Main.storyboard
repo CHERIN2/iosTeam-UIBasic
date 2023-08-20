@@ -124,29 +124,14 @@
                     <tabBarItem key="tabBarItem" title="" id="b4J-dT-c7P">
                         <imageReference key="image" image="house" catalog="system" symbolScale="medium"/>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" id="m2M-aa-lzu"/>
                     <connections>
                         <outlet property="mainTableView" destination="3Et-kc-72e" id="su9-1o-ldQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="slz-GB-gEa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="962.59541984732823" y="3.5211267605633805"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ysn-qZ-EvF">
-            <objects>
-                <viewController id="MSi-Hh-dk3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0Vg-gR-LkB">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="FtB-VX-J8J"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="square.and.pencil" catalog="system" id="pno-pQ-Cua"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zle-mg-PYO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="963" y="-737"/>
+            <point key="canvasLocation" x="909" y="755"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ntt-za-YLW">
@@ -169,6 +154,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eYy-8d-Wx7" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Ygp-Sl-P8a"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PBZ-Ia-LZ5">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -177,13 +163,74 @@
                     </tabBar>
                     <connections>
                         <segue destination="HXk-yZ-vIt" kind="relationship" relationship="viewControllers" id="Vjf-Dr-bdr"/>
-                        <segue destination="MSi-Hh-dk3" kind="relationship" relationship="viewControllers" id="yQ4-7u-SAx"/>
+                        <segue destination="WOx-B1-7ir" kind="relationship" relationship="viewControllers" id="zVA-8r-0n3"/>
                         <segue destination="UKh-IM-aQR" kind="relationship" relationship="viewControllers" id="ujg-9d-qyb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a43-50-f5Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="107.63358778625954" y="3.5211267605633805"/>
+        </scene>
+        <!--Write View Controller-->
+        <scene sceneID="G6D-Vg-JTk">
+            <objects>
+                <viewController id="WOx-B1-7ir" customClass="WriteViewController" customModule="ThekusDayDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iUM-3V-TE5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tAj-eX-AP1">
+                                <rect key="frame" x="0.0" y="78" width="393" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="&lt; 뒤로" id="cbm-Nd-fMj">
+                                        <connections>
+                                            <action selector="backButton:" destination="WOx-B1-7ir" id="Kch-w4-3ul"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bwD-aM-24y"/>
+                                    <barButtonItem title="확인" id="9lR-9E-dTq">
+                                        <connections>
+                                            <action selector="confirmButton:" destination="WOx-B1-7ir" id="q20-D7-nzR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LjI-av-Y6N">
+                                <rect key="frame" x="16" y="133" width="361" height="455"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psa-S1-hgq">
+                                <rect key="frame" x="16" y="718" width="69" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+ 사진"/>
+                                <connections>
+                                    <action selector="addPhotoButton:" destination="WOx-B1-7ir" eventType="touchUpInside" id="LSj-nK-Rd0"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Kq-wR-Fyl">
+                                <rect key="frame" x="16" y="607" width="154" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XnT-pl-bJw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="square.and.pencil" catalog="system" id="RBp-bm-rE4"/>
+                    <navigationItem key="navigationItem" id="IcC-pc-qL5"/>
+                    <connections>
+                        <outlet property="imageView" destination="6Kq-wR-Fyl" id="6Wu-Wk-BNd"/>
+                        <outlet property="textView" destination="LjI-av-Y6N" id="rzV-g8-kwO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gwU-53-0b3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959.5419847328244" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
@@ -192,6 +239,9 @@
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="square.and.pencil" catalog="system" width="128" height="113"/>
         <image name="star.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
