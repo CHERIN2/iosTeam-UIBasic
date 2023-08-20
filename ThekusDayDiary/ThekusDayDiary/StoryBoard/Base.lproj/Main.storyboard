@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3Et-kc-72e">
-                                <rect key="frame" x="0.0" y="40" width="393" height="812"/>
+                                <rect key="frame" x="0.0" y="99" width="393" height="670"/>
                                 <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainCell" rowHeight="252" id="fY3-ph-1rU" customClass="MainCell" customModule="ThekusDayDiary" customModuleProvider="target">
@@ -231,7 +231,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gwU-53-0b3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="959.5419847328244" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1952" y="4"/>
         </scene>
         <!--New View-->
         <scene sceneID="zLm-XB-U9q">
@@ -339,7 +339,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="&lt;   Back"/>
                                 <connections>
-                                    <segue destination="HXk-yZ-vIt" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="ehT-jf-MOZ"/>
+                                    <segue destination="eYy-8d-Wx7" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="pTE-D4-nMa"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rmm-ir-VyD">
@@ -380,9 +380,6 @@
             <point key="canvasLocation" x="2122.9007633587785" y="735.91549295774655"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="ehT-jf-MOZ"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="AppLogo2" width="446.33334350585938" height="190"/>
         <image name="house" catalog="system" width="128" height="104"/>
