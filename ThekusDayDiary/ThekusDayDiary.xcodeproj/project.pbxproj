@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B17950D2A8DFC0400945222 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17950C2A8DFC0400945222 /* ProfileCell.swift */; };
+		1B1795102A8E0B6200945222 /* ProfileCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17950F2A8E0B6200945222 /* ProfileCollectionView.swift */; };
 		1B238E202A8C630100872A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B238E1F2A8C630100872A1B /* AppDelegate.swift */; };
 		1B238E222A8C630100872A1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B238E212A8C630100872A1B /* SceneDelegate.swift */; };
 		1B238E272A8C630100872A1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B238E252A8C630100872A1B /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B17950C2A8DFC0400945222 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		1B17950F2A8E0B6200945222 /* ProfileCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionView.swift; sourceTree = "<group>"; };
 		1B238E1C2A8C630100872A1B /* ThekusDayDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThekusDayDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B238E1F2A8C630100872A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B238E212A8C630100872A1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B17950E2A8DFC3100945222 /* ProfileCollection */ = {
+			isa = PBXGroup;
+			children = (
+				1B17950C2A8DFC0400945222 /* ProfileCell.swift */,
+				1B17950F2A8E0B6200945222 /* ProfileCollectionView.swift */,
+			);
+			path = ProfileCollection;
+			sourceTree = "<group>";
+		};
 		1B238E132A8C630000872A1B = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				1B238E392A8DA50800872A1B /* ProFileView.swift */,
+				1B17950E2A8DFC3100945222 /* ProfileCollection */,
 			);
 			path = ProfileView;
 			sourceTree = "<group>";
@@ -210,13 +224,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B238E3A2A8DA50800872A1B /* ProFileView.swift in Sources */,
+				1B17950D2A8DFC0400945222 /* ProfileCell.swift in Sources */,
 				7B6B49512A8D2C6F0098B8DE /* UserList.swift in Sources */,
 				7BF6E3D62A8D3152001D30B1 /* MainView.swift in Sources */,
 				1B238E202A8C630100872A1B /* AppDelegate.swift in Sources */,
 				7B6B494F2A8D2A640098B8DE /* MainCell.swift in Sources */,
-				CB7DF2622A91D8BF00A4404B /* DitailView.swift in Sources */,
-				1B238E222A8C630100872A1B /* SceneDelegate.swift in Sources */,
-				7FF645D32A915480007F608D /* WriteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
