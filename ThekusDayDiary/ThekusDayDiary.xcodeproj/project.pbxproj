@@ -20,6 +20,7 @@
 		7B6B49512A8D2C6F0098B8DE /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B49502A8D2C6F0098B8DE /* UserList.swift */; };
 		7BF6E3D62A8D3152001D30B1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF6E3D52A8D3152001D30B1 /* MainView.swift */; };
 		7FF645D32A915480007F608D /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF645D22A915480007F608D /* WriteView.swift */; };
+		CBF6927B2A93199A002DC655 /* DetialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF6927A2A93199A002DC655 /* DetialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		7B6B49502A8D2C6F0098B8DE /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
 		7BF6E3D52A8D3152001D30B1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7FF645D22A915480007F608D /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
+		CBF6927A2A93199A002DC655 /* DetialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				1B238E352A8C9AA800872A1B /* StoryBoard */,
 				1B238E282A8C630300872A1B /* Assets.xcassets */,
 				1B238E2D2A8C630300872A1B /* Info.plist */,
+				CBF6927A2A93199A002DC655 /* DetialView.swift */,
 			);
 			path = ThekusDayDiary;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				1BEF3D352A9308BB003BE2A4 /* ProFileEditView.swift in Sources */,
 				1B1795102A8E0B6200945222 /* ProfileCollectionView.swift in Sources */,
 				1B238E222A8C630100872A1B /* SceneDelegate.swift in Sources */,
+				CBF6927B2A93199A002DC655 /* DetialView.swift in Sources */,
 				7FF645D32A915480007F608D /* WriteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
